@@ -371,7 +371,7 @@ const transferBookOwner = async (bookId: number, newOwner: string) => {
           owner={book.owner}
           finished={book.finished.toString()}
           clickBookFinished={clickBookFinished}
-          transferBookOwner={transferBookOwner} // Pass the function as a prop
+          transferBookOwner={transferBookOwner}
 
 
         />
@@ -414,7 +414,7 @@ const transferBookOwner = async (bookId: number, newOwner: string) => {
     type="button"
     class="inline-block px-6 py-2.5 mt-4 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
     style={{ backgroundColor: "#ffd1e3", color: "#d92759"}}
-    >
+    onclick="window.location.href='https://github.com/pakkome/regitration-transfer_pet.git'">
     Github
   </button>
 </div>

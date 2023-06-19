@@ -16,7 +16,7 @@ contract Library {
     string sex;
     string dateofbirth;
     string color;
-    address owner; // Updated to use address for owner field
+    address owner;
     bool finished;
   }
 
@@ -24,7 +24,7 @@ contract Library {
   mapping(uint => address) bookToOwner;
 
   function addBook(string memory name, uint256 year, string memory author, string memory petnumber, string memory breed, string memory sex,string memory dateofbirth, string memory color, address owner, bool finished) external {
-    require(owner != address(0), "Invalid owner address"); // Ensure a valid owner address is provided
+    require(owner != address(0), "Invalid owner address");
     uint bookId = bookList.length;
     bookList.push(Book(bookId, name, year, author, petnumber, breed, sex, dateofbirth, color, owner, finished));
     bookToOwner[bookId] = owner;
